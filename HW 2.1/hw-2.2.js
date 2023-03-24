@@ -5,12 +5,12 @@ a = 20;
 alert(a);
 
 // Задание 2
-let iPhoneborn = "год выпуска первого iPhone";
-alert(iPhoneborn);
+let iPhoneBorn = "год выпуска первого iPhone";
+alert(iPhoneBorn);
 
 // Задание 3
-let jsAuthorname = "Brendan Eich";
-alert(jsAuthorname);
+let jsAuthorName = "Brendan Eich";
+alert(jsAuthorName);
 
 // Задание 4
 let b = 10, c = 2;

@@ -1,0 +1,43 @@
+@media(max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .top {
+        min-height: 735px;
+        align-items: center;
+
+        &__heading {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            padding-top: 238.7px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__button {
+            margin-top: 0;
+        }
+
+    }
+
+
+    .content {
+        align-content: center;
+        min-height: 1221px;
+        grid-template-columns: repeat(4, 1fr);
+
+        &__item {
+            grid-column: 1/-1;
+            padding-left: 16px;
+        }
+    }
+}

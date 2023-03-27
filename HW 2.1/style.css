@@ -9,8 +9,8 @@ body {
 }
 
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
+  padding-left: 8.333333vw;
+  padding-right: 8.333333vw;
 }
 
 a {
@@ -20,6 +20,7 @@ a {
 .top {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(./img/bg.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   min-height: 1024px;
   display: flex;
@@ -32,6 +33,7 @@ a {
   line-height: 78px;
   color: #FFFFFF;
   padding-top: 217.1px;
+  max-width: 789px;
 }
 .top__text {
   max-width: 481px;
@@ -48,6 +50,7 @@ a {
   width: 234.06px;
   height: 48.6px;
   background: #9C0332;
+  border: none;
   border-radius: 30px;
   font-weight: 400;
   font-size: 18px;
@@ -91,10 +94,55 @@ a {
 }
 .content__item_1 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/item1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .content__item_2 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/item2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .content__item_3 {
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(./img/item3.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    min-height: 735px;
+    align-items: center;
+  }
+  .top__heading {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    padding-top: 238.7px;
+  }
+  .top__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+  }
+  .top__button {
+    margin-top: 0;
+  }
+  .content {
+    align-content: center;
+    min-height: 1221px;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .content__item {
+    grid-column: 1/-1;
+    padding-left: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -7,6 +7,7 @@
     .top {
         min-height: 735px;
         align-items: center;
+        gap: 32px;
 
         &__heading {
             font-weight: 700;
@@ -31,13 +32,63 @@
 
 
     .content {
+        padding-top: 128px;
         align-content: center;
         min-height: 1221px;
         grid-template-columns: repeat(4, 1fr);
+        column-gap: 0;
+        row-gap: 32px;
 
         &__item {
+            margin: 0;
             grid-column: 1/-1;
             padding-left: 16px;
         }
+
+        &__info {
+            grid-column: 1/-1;
+            align-items: center;
+            justify-content: flex-start;
+            padding-top: 146.87px;
+            min-height: 217.6px;
+
+            &_game2 {
+                padding-top: 104px;
+            }
+
+            &_game3 {
+                min-height: 880px;
+                padding-top: 136.4px;
+                box-sizing: border-box;
+            }
+        }
+
+        &__heading {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            text-align: center;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        &__image-box {
+            grid-column: 1/-1;
+            min-height: 236px;
+            margin-top: 32px;
+
+            &_game2 {
+                order: 6;
+            }
+        }
+
+        &__image {
+            width: 100%;
+        }
+
     }
 }

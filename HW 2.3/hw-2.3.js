@@ -1,68 +1,75 @@
 // Задание 1
-let a = 10;
-alert(a);
-a = 20;
-alert(a);
+let password = 'qwerty';
+let answer = prompt('«Введите пароль»');
+if (password == answer) { alert('Пароль введен верно'); }
+else { alert('Пароль введен неправильно') };
 
 // Задание 2
-let iPhoneBorn = "год выпуска первого iPhone";
-alert(iPhoneBorn);
+let c = 2;
+if (c > 0 && c < 10) { console.log('Верно') } else { console.log('Неверно') };
 
 // Задание 3
-let jsAuthorName = "Brendan Eich";
-alert(jsAuthorName);
+let d = 8, e = 150;
+(d > 100 || e > 100) ? console.log('Верно') : console.log('Неверно');
 
 // Задание 4
-let b = 10, c = 2;
-alert(b + c);
-alert(b - c);
-alert(b * c);
-alert(b / c);
+let a = '2', b = '3';
+alert(Number(a) + Number(b));
 
 // Задание 5
-let result = 2 ** 5;
-alert(result);
-
-// Задание 6
-a = 9, b = 2;
-alert(a % b);
-
-// Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(num);
-
-// Задание 8
-let age = prompt("Сколько вам лет?");
-alert(age);
-
-// Задание 9.0
-const user = {
-    name: 'Ruslan',
-    age: 42,
-    isAdmin: true
+let monthNumber = Number(prompt('Введите номер месяца'));
+switch (monthNumber) {
+    case 12:
+    case 2:
+    case 1:
+        console.log('Зима');
+        break;
+    case 3:
+    case 4:
+    case 5:
+        console.log('Весна');
+        break;
+    case 8:
+    case 6:
+    case 7:
+        console.log('Лето');
+        break;
+    case 9:
+    case 10:
+    case 11:
+        console.log('Осень');
+        break;
+    default:
+        console.log('Нет такого месяца');
+        break;
 }
 
-// Задание 9.1
-user['city of residence'] = 'Syktyvkar';
+// Задание 7
+let num = prompt('Пожалуйста, введите любое число');
+if (isNaN(num)) { alert('Нужно ввести число') }
+else if (num % 2 == 0) { alert('Число четное') }
+else { alert('Число нечетное') };
 
-// Задание 9.2
-user.age = 44;
 
-// Задание 9.3
-delete user['city of residence'];
-console.log(user);
+// Задание 8
+let clientOS = Number(prompt('Какая операционная система у вашего телефона? (0 — iOS, 1 — Android)'));
+if (clientOS == 1) {
+    alert('Установите версию приложения для Android по ссылке')
+} else if (clientOS == 0) {
+    alert('Установите версию приложения для iOS по ссылке')
+} else {
+    alert('К сожалению, можно выбрать только из "0" и "1"')
+};
 
-// Задание 9.4
-let info = prompt('Какую информацию хотите узнать o пользователе?', 'age');
-alert(user[info]);
-
-// Задание 10
-let userName = prompt('Сообщите ваше имя');
-alert(`Привет ,${userName}!`);
-
+// Задание 9.0
+let clientOS = Number(prompt('Какая операционная система у вашего телефона? (0 — iOS, 1 — Android)'));
+let clientDeviceYear;
+if (clientOS == 1) {
+    clientDeviceYear = Number(prompt('Сообщите год выпуска модели вашего телефона'));
+    (clientDeviceYear >= 2015) ? alert('Установите версию приложения для Android по ссылке') : alert('Установите облегченную версию приложения для Android по ссылке');
+} else if (clientOS == 0) {
+    clientDeviceYear = Number(prompt('Сообщите год выпуска модели вашего телефона'));
+    (clientDeviceYear >= 2015) ? alert('Установите версию приложения для iOS по ссылке') : alert('Установите облегченную версию приложения для iOS по ссылке');
+} else {
+    alert('К сожалению, можно выбрать только из "0" и "1"')
+};

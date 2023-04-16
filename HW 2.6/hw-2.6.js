@@ -1,4 +1,4 @@
-// Задание 1
+// // Задание 1
 const numbs = [1, 5, 4, 10, 0, 3];
 for (let i = 0; i < numbs.length; i++) {
     console.log(numbs[i]);
@@ -6,10 +6,7 @@ for (let i = 0; i < numbs.length; i++) {
 }
 
 // Задание 2
-numbs.forEach((el,index) => {
-	if (el == 4) 
-	console.log(`${index}`);
-});
+	console.log(numbs.indexOf(4));
 
 // Задание 3
 let numbers = [1, 3, 5, 10, 20];
@@ -42,11 +39,11 @@ alert(`${a} ${(arr1.includes(a))? 'содержится' : 'не содержи�
 
 // Задание 8
 let werbs = 'abcdef';
-console.log(werbs = werbs.split('').reverse().join(""));
+console.log(werbs.split('').reverse().join(""));
 
 // Задание 9
-let arr2 = [[1, 2, 3,], [4, 5, 6]].join(",").split(",");
-console.log(arr2.map(string => +string));
+let arr2 = [[1, 2, 3,], [4, 5, 6]];
+console.log(arr2.flat());
 
 // Задание 10
 const arr3 = [2, 5, 6, 4, 3, 1, 7];
@@ -85,7 +82,7 @@ console.log(randomNumbs,evenNumbers);
 // Задание 15
 const randomNums = [];
 for (let i = 0; i < 6; i++) {
-    randomNums.push(Math.floor(Math.random() * (11 - 1)) + 1);
+    randomNums.push(Math.floor(Math.random() * 10 + 1));
 }
 let average = (randomNums.reduce((sum, current) => sum + current, 0)) / randomNums.length;
 console.log(`${randomNums} среднее арифметическое - ${average}`);

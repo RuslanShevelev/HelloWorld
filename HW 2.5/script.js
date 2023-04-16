@@ -32,3 +32,16 @@ function playGame1() {
             break;
     }
 }
+function playGame2() {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+    fruits = fruits.sort(() => Math.random() - 0.5);
+    alert(fruits);
+    let answer1 = fruits[0];
+    let answer2 = fruits[6];
+    let userAnswer1 = prompt('Введите первое название фрукта из списка');
+    let userAanswer2 = prompt('Введите последнее название фрукта из списка');
+    alert((userAnswer1.toLowerCase() == answer1.toLowerCase() && userAanswer2.toLowerCase() == answer2.toLowerCase()) ? "Поздравляем, вы угадали оба фрукта!!!" :
+        (userAnswer1.toLowerCase() == answer1.toLowerCase() || userAanswer2.toLowerCase() == answer2.toLowerCase()) ? 'Вы были близки к победе! Но угадали только один фрукт' :
+            `Вы ответили неверно. Правильные ответы - ${fruits[0]} и ${fruits[6]}. Попробуйте еще раз.`);
+
+}

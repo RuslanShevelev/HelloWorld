@@ -29,7 +29,7 @@ getSortedArrayObj(users);
 
 // Задание 3
 function each(arr, callback) {
-    result = callback(arr);
+    let result = callback(arr);
     console.log(result);
 }
 let reversArr = (array) => array.reverse();
